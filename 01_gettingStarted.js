@@ -7,7 +7,7 @@
  */
 
 function gettingStarted() {
-  return "hello world";
+  return "hello test";
 }
 
 /**
