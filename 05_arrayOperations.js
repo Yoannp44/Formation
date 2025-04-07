@@ -10,9 +10,8 @@
  * 
   */
 
-const multiplyByTwo = (array) => {
- return array.map((i) => i * 2);
-}
+const multiplyByTwo = array => array.map((i) => i * 2)
+console.log(multiplyByTwo([1,2]))
 
 
 /**
@@ -25,8 +24,8 @@ const multiplyByTwo = (array) => {
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const filterNameStartByA = (array) => {array.filter((name) => name.substr(0, 1) =  "A")}
-
+const filterNameStartByA = array => array.filter((name) => name.substr(0, 1) =  "A")
+console.log(filterNameStartByA(["test","atest"]))
 /**
  * Utiliser la fonction .reduce sur le tableau passé en paramètre
  * retourne la somme des valeurs du tableau
@@ -37,13 +36,8 @@ const filterNameStartByA = (array) => {array.filter((name) => name.substr(0, 1) 
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const sum = (array) => {
-   array.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    0,
-  );
-
-}
+const sum = array => array.reduce((accumulator, currentValue) => accumulator + currentValue,0,)
+console.log(sum([1,2,3]))
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
