@@ -16,6 +16,21 @@
  * 
  */
 
-const getGroupName = (obj) => {}
+const getGroupName = (obj) => obj?.group?.name
+let test = 
+    {
+        name: "John",
+        group: {
+              name: "admin"
+            }
+          }
+
+console.log(getGroupName({
+    name: "John",
+    group: {
+          name: "admin"
+        }
+      }))
+console.log(getGroupName({}))
 
 module.exports = {getGroupName};
